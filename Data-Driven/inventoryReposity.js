@@ -4,6 +4,7 @@ class InventoryRepository {
     }
     
     addProduct(product) {
+        product.id = this.products.length +1;
         this.products.push(product);
     }
 
@@ -21,7 +22,7 @@ class InventoryRepository {
     showAllProducts() {
         console.log("Inventario:");
         this.products.forEach(product => {
-            console.log(`${product.name}: ${product.stock} unidades`);
+            console.log(`${product.id}, ${product.name}: ${product.stock} unidades`);
         });
     }
 }

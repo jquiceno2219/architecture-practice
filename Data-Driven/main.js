@@ -1,9 +1,9 @@
 const InventoryRepository = require("./inventoryReposity");
 const Product = require("./product");
 
-const product1 = new Product(1, "Producto1", "Decripcion", 10);
-const product2 = new Product(2, "Producto2", "Test 2", 20);
-const product3 = new Product(3, "Producto3", "Test3", 15);
+const product1 = new Product(null, "Producto1", "Decripcion", 10);
+const product2 = new Product(null, "Producto2", "Test 2", 20);
+const product3 = new Product(null, "Producto3", "Test3", 15);
 
 const inventory = new InventoryRepository();
 
